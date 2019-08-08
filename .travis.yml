@@ -23,8 +23,7 @@ before_install:
   -in pliers/tests/credentials/google.json.enc -out pliers/tests/credentials/google.json -d || true
 - sudo add-apt-repository ppa:jonathonf/ffmpeg-4 -y
 - sudo apt-get -qq update
-- sudo apt-get install ffmpeg
-- sudo apt-get install libmp3lame-dev tesseract-ocr graphviz cmake
+- sudo apt-get install libc6 ffmpeg libmp3lame-dev tesseract-ocr graphviz cmake
 - export MINICONDA=$HOME/miniconda
 - export PATH="$MINICONDA/bin:$PATH"
 - wget $MINICONDA_URL -O miniconda.sh;
